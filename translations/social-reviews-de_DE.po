@@ -1,0 +1,99 @@
+# Copyright (C) 2018 Hannes Etzelstorfer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Social Reviews 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/social-reviews\n"
+"POT-Creation-Date: 2018-04-13 14:28:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-04-13 14:29+0000\n"
+"Last-Translator: admin <admin@haet.at>\n"
+"Language-Team: German\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes"
+
+#. Plugin Name of the plugin/theme
+msgid "Social Reviews"
+msgstr ""
+
+#: includes/class-admin.php:30
+msgid "Channels"
+msgstr ""
+
+#: includes/class-admin.php:37
+msgid "Facebook Reviews Page"
+msgstr "Facebook Bewertungsseite"
+
+#: includes/class-admin.php:43
+msgid "URL to the reviews page of your Facebook corporate site."
+msgstr "Link zu den Bewertungen auf deiner Facebook Seite."
+
+#: includes/class-admin.php:53
+msgid "Tripadvisor Reviews Page"
+msgstr "Tripadvisor Bewertungsseite"
+
+#: includes/class-admin.php:59
+msgid "URL to the reviews page of your Tripadvisor site."
+msgstr "Link zu den Bewertungen auf deiner Tripadvisor Seite."
+
+#: includes/class-admin.php:68
+msgid "HolidayCheck Reviews Page"
+msgstr "HolidayCheck Bewertungsseite"
+
+#: includes/class-admin.php:74
+msgid "URL to the reviews page of your HolidayCheck site."
+msgstr "Link zu den Bewertungen auf deiner HolidayCheck Seite."
+
+#: includes/class-admin.php:83
+msgid "Google API"
+msgstr ""
+
+#: includes/class-admin.php:92
+msgid "Google Places API key"
+msgstr ""
+
+#: includes/class-admin.php:107
+msgid "Google Place ID"
+msgstr ""
+
+#: includes/class-admin.php:122
+msgid "Google Reviews Page"
+msgstr "Google Bewertungsseite"
+
+#: includes/class-admin.php:128
+msgid ""
+"URL to the reviews page of your Google my business page (just google for "
+"your business name, click the profile on the right and then click on reviews)"
+"."
+msgstr ""
+"Link zu deinen Google Bewertungen (einfach nach deiner Firma googeln, dann "
+"rechts die Infobox deines My Business Profils anklicken und auf Bewertungen "
+"klicken)."
+
+#: includes/class-frontend.php:65
+msgid "Reviews"
+msgstr "Bewertungen"
+
+#. Plugin URI of the plugin/theme
+msgid "https://etzelstorfer.com/en/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Social Media Reviews"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Hannes Etzelstorfer"
+msgstr "Hannes Etzelstorfer"
