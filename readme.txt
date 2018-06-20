@@ -2,8 +2,8 @@
 Contributors: haet
 Tags: 
 Requires at least: 3.9
-Tested up to: 4.9.5
-Stable tag: 0.2
+Tested up to: 4.9.6
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,8 @@ You can remove the styles using the filter 'haet_reviews_load_css' and just retu
 
 == Changelog ==
 
+= 0.3 =
+changed Facebook scraper to match HTML code instead of JSON
 
 = 0.2 =
 added setting page GER

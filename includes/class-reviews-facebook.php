@@ -31,26 +31,25 @@ final class HaetReviewsFacebook extends HaetReviews{
             $html_response = wp_remote_retrieve_body( $response );
             $html_response = stripslashes( $html_response );
 
-            if( !preg_match_all('/<script type="application\/ld\+json">(.*)<\/script>/U', $html_response, $schema_match) )
-                return false;
-
-            if( !is_array($schema_match[1]) || !isset( $schema_match[1][0] ) )
+            if( !preg_match_all('/<div .* itemtype="http:\/\/schema\.org\/AggregateRating">.*<meta content="(.*)" itemprop="ratingValue" \/>.*<meta content="(.*)" itemprop="ratingCount" \/>.*<\/div>/U', $html_response, $html_match) )
                 return false;
 
 
-            $schema = json_decode( $schema_match[1][0] );
-            if( is_user_logged_in() ){
-                echo '<pre>';
-                var_dump($schema);
-                echo '</pre>';
-            }
-            if( !$schema || !isset( $schema->aggregateRating ) || !isset( $schema->aggregateRating->ratingValue ) || !isset( $schema->aggregateRating->ratingCount ) )
+
+            if( !is_array($html_match[1]) || !isset( $html_match[1][0] ) || !isset( $html_match[2][0] ) )
+                return false;
+
+
+            $rating_value = $html_match[1][0];
+            $count = $html_match[2][0];
+
+            if( !is_numeric( $rating_value ) || !is_numeric( $count ) )
                 return false;
 
             $rating = array(
-                    'rating'    =>  round( floatval( $schema->aggregateRating->ratingValue ), 1 ),
+                    'rating'    =>  round( floatval( $rating_value ), 1 ),
                     'max_rating'=>  5,
-                    'count'     =>  $schema->aggregateRating->ratingCount,
+                    'count'     =>  $count,
                 );
 
             update_option( 'rating_' . $this->name, $rating );

@@ -3,7 +3,7 @@
 Plugin Name: Social Reviews
 Plugin URI: https://etzelstorfer.com/en/
 Description: Social Media Reviews
-Version: 0.2
+Version: 0.3
 Text Domain: social-reviews
 Domain Path: /translations
 Author: Hannes Etzelstorfer
